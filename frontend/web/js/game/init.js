@@ -67,9 +67,22 @@ var    simpleLevelPlan5    =    [
     "                        xxxxxxxxxxxxxx           o  ",
     "                                        xxxxxxxxxxxx"
 ];
+//var    simpleLevelPlan6    =    [
+var    simpleLevelPlan    =    [
+    "                                                                   ",
+    " x   x  xxxxxxx  x     x   xx       x       xx  xx  xx      xx     ",
+    " x   x  x     x  x     x    xx     xx      xx   xx  xxxx    xx     ",
+    " x   x  x     x  x     x     xx     x     xx    xx  xx  xx  xx     ",
+    " xxxxx  x     x  x     x      xx   xxx   xx     xx  xx   xx xx     ",
+    "     x  x     x  x     x       xxxxxxxxxxx      xx  xx    xxxx     ",
+    "     x  x     x  x     x         xx   xx        xx  xx     xxx     ",
+    " xxxxx  xxxxxxx  xxxxxxxxx        x   x         xx  xx      xx     ",
+    " @                                                                 ",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+];
 //=========USER ========
 function	Player(pos)	{
-    this.pos	=	pos.plus(new	Vector(0,	-0.5));
+    this.pos	=	pos.plus(new	Vector(-1,	-0.5));
     this.size	=	new	Vector(0.8,	0.5);
     this.speed	=	new	Vector(0,	0);
 }
@@ -367,8 +380,8 @@ DOMDisplay.prototype.clear	=	function()	{
 
 
 
-var	simpleLevel	=	new	Level(simpleLevelPlan);
-var	display	=	new	DOMDisplay(document.body,	simpleLevel);
+//var	simpleLevel	=	new	Level(simpleLevelPlan);
+//var	display	=	new	DOMDisplay(document.body,	simpleLevel);
 
 //================RUN
 function	runAnimation(frameFunc)	{
