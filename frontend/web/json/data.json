@@ -1,0 +1,47 @@
+  {
+    "_id": "56abbee0297f8a05a66a556c",
+    "index": 0,
+    "guid": "6eaae1c2-df28-4015-a899-a3f1d2e7ff1c",
+    "isActive": true,
+    "balance": "$1,819.46",
+    "picture": "http://placehold.it/32x32",
+    "age": 29,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Holcomb",
+      "last": "Chan"
+    },
+    "company": "FANFARE",
+    "email": "holcomb.chan@fanfare.net",
+    "phone": "+1 (926) 574-3693",
+    "address": "450 Coleridge Street, Volta, Colorado, 8007",
+    "about": "Est voluptate non duis ipsum laboris minim. Anim esse sunt duis minim consectetur reprehenderit id magna ipsum irure ea. Laboris veniam ea occaecat commodo adipisicing aliquip minim.",
+    "registered": "Monday, January 26, 2015 4:06 AM",
+    "latitude": "39.549477",
+    "longitude": "-172.123007",
+    "tags": [
+      7,
+      "voluptate"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      3,
+      {
+        "id": 1,
+        "name": "Bass Kidd"
+      }
+    ],
+    "greeting": "Hello, Holcomb! You have 6 unread messages.",
+    "favoriteFruit": "strawberry"
+  }

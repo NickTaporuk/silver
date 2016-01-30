@@ -8,12 +8,18 @@
 <body>
 <?php
     //VAR_DUMP($_SERVER);
-    VAR_DUMP($_ENV);
+    //VAR_DUMP($_ENV);
     //VAR_DUMP(getenv('env'));
     //var_dump($_SERVER['REQUEST_TIME_FLOAT']);
     //$now = DateTime::createFromFormat('U.u', $_SERVER['REQUEST_TIME_FLOAT']);
     //echo $now->format("m-d-Y H:i:s.u");
 ?>
-Hello
+
+<form name="upload">
+    <input type="file" name="myfile">
+    <input type="submit" value="Загрузить">
+</form>
+    <ul id="links"></ul>
+<script src="js/init.js"></script>
 </body>
 </html>
