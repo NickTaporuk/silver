@@ -1,13 +1,13 @@
 var    simpleLevelPlan    =    [
-    "                                                    ",
-    "                                                    ",
-    "        x                                =   x      ",
-    "        x                o    o              x      ",
-    "        x   @              xxxxxxxxxxx        o ====",
-    "        xxxxx    xxxxxxxxxx                   o     ",
-    "                        x!!!!!!!!!!!!x        o     ",
-    "                        xxxxxxxxxxxxxx  xxxxxxxxxxx ",
-    "                                                    "
+    "                                                                                                                                                                                                                                             ",
+    "                                                                                                                                                                                                                                             ",
+    "        x                                =   x                                                                                                                                                                                               ",
+    "        x                o    o              x                                                                                                                                                                                               ",
+    "        x   @              xxxxxxxxxxx        o ====                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx         oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo   ",
+    "       xxxxx    xxxxxxxxxx                   o                                                                                                                                                                                               ",
+    "                        x!!!!!!!!!!!!x        o                                                           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  ",
+    "              o         xxxxxxxxxxxxxx  xxxxxxxxxxx          xx!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!                                                                                                                                      ",
+    "              x                                       xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                                                                                                                    "
 ];
 
 var    simpleLevelPlan1    =    [
@@ -70,7 +70,7 @@ var    simpleLevelPlan5    =    [
 //=========USER ========
 function	Player(pos)	{
     this.pos	=	pos.plus(new	Vector(0,	-0.5));
-    this.size	=	new	Vector(0.8,	1.5);
+    this.size	=	new	Vector(0.8,	0.5);
     this.speed	=	new	Vector(0,	0);
 }
 
@@ -88,7 +88,7 @@ Player.prototype.moveX	=	function(step,	level,	keys)	{
         this.pos	=	newPos;
 };
 
-var	gravity	=	30;
+var	gravity	=	40;
 var	jumpSpeed	=	37;
 Player.prototype.moveY	=	function(step,	level,	keys)	{
     this.speed.y	+=	step	*	gravity;
