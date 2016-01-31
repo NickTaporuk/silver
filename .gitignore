@@ -2,3 +2,4 @@
 .idea
 vendor
 frontend/node_modules
+deploy/ip_addresses.txt

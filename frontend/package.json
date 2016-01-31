@@ -9,6 +9,8 @@
   "author": "Nickolay Kuropatkin",
   "license": "MIT",
   "devDependencies": {
+    "babel-polyfill": "^6.3.14",
+    "figlet": "^1.1.1",
     "gulp": "^3.9.0"
   }
 }
