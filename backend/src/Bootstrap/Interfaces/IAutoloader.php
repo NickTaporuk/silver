@@ -6,7 +6,7 @@
  * Time: 13:06
  */
 
-namespace Backend\Src\Bootstrap;
+namespace backend\src\Bootstrap;
 
 
 interface AutoloaderNamespaces {
