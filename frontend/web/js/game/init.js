@@ -3,11 +3,11 @@ var    simpleLevelPlan    =    [
     "                                                                                                                                                                                                                                             ",
     "        x                                =   x                                                                                                                                                                                               ",
     "        x                o    o              x                                                                                                                                                                                               ",
-    "        x   @              xxxxxxxxxxx        o ====                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx         oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo   ",
+    "        x   @              xxxxxxxxxxx        o ====                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                                                                                                                      o   ",
     "       xxxxx    xxxxxxxxxx                   o                                                                                                                                                                                               ",
-    "                        x!!!!!!!!!!!!x        o                                                           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  ",
+    "                        x   !!!!!!!!!x        o                                                           xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  ",
     "              o         xxxxxxxxxxxxxx  xxxxxxxxxxx          xx!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!                                                                                                                                      ",
-    "              x                                       xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                                                                                                                    "
+    "            xxxx                                      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                                                                                                                                    "
 ];
 
 var    simpleLevelPlan1    =    [
@@ -69,8 +69,8 @@ var    simpleLevelPlan5    =    [
 ];
 var    simpleLevelPlan6    =    [
     "                                                                   ",
-    " x   x  xxxxxxx  x     x   xx       x       xx  xx  xx      xx     ",
-    " x   x  x     x  x     x    xx     xx      xx   xx  xxxx    xx     ",
+    " x   x  xxxxxxx  x     x   xx       x       xx  xx  xxx     xx     ",
+    " x   x  x     x  x     x    xx     xx      xx   xx  xx xx   xx     ",
     " x   x  x     x  x     x     xx     x     xx    xx  xx  xx  xx     ",
     " xxxxx  x     x  x     x      xx   xxx   xx     xx  xx   xx xx     ",
     "     x  x     x  x     x       xxxxxxxxxxx      xx  xx    xxxx     ",

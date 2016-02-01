@@ -1,0 +1,29 @@
+<?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: nick
+ * Date: 31.01.16
+ * Time: 18:25
+ */
+
+namespace Backend\Src\Bootstrap\Classes;
+
+/**
+ * Class Request
+ * @package Backend\Src\Bootstrap\Classes
+ */
+class Request {
+
+    /**
+     * @var
+     */
+    public static $request;
+
+    /**
+     * @method __construct is constructor
+     */
+    function __construct()
+    {
+        static::$request = array_merge(["GET"=>$_GET],["POST"=>$_POST],["SERVER"=>$_SERVER]);
+    }
+}

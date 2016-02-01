@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # generate documentation to project
 
-PWD=`pwd`
-
-phpdoc -d "$PWD/backend/src" -t "$PWD/docs/api"
+PWD=`pwd`;
+BACKEND="/Backend/Src";
+OUTPUT_DOC="/docs/api";
+phpdoc -d "$PWD$BACKEND" -t "$PWD$OUTPUT_DOC"

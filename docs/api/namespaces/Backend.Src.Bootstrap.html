@@ -21,55 +21,7 @@
     <script src="../js/jquery.smooth-scroll.js"></script>
     <script src="../js/prism.min.js"></script>
     <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
-        <script type="text/javascript">
-        function loadExternalCodeSnippets() {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
-                var src = pre.getAttribute('data-src');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
-
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
-
-                pre.textContent = '';
-
-                code.textContent = 'Loading…';
-
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
-
-                        if (xhr.status < 400 && xhr.responseText) {
-                            code.textContent = xhr.responseText;
-
-                            Prism.highlightElement(code);
-                        }
-                        else if (xhr.status >= 400) {
-                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
-                        }
-                        else {
-                            code.textContent = '✖ Error: File does not exist or is empty';
-                        }
-                    }
-                };
-
-                xhr.send(null);
-            });
-        }
-
-        $(document).ready(function(){
-            loadExternalCodeSnippets();
-        });
-        $('#source-view').on('shown', function () {
-            loadExternalCodeSnippets();
-        })
-    </script>
-
+    
     <link rel="shortcut icon" href="../images/favicon.ico"/>
     <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
     <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
@@ -92,7 +44,6 @@
                             API Documentation <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                                                        <li><a href="../namespaces/backend.html">\backend</a></li>
                                                         <li><a href="../namespaces/Backend.html">\Backend</a></li>
                                                     </ul>
                     </li>
@@ -115,7 +66,7 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="../reports/errors.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">14</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">13</span>
                                 </a>
                             </li>
                             <li>
@@ -145,51 +96,51 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1050492555"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1028105852"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-1050492555" class="accordion-body collapse in">
+            <div id="namespace-1028105852" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-2127601439"></a>
-                                <a href="../namespaces/backend.html" style="margin-left: 30px; padding-left: 0">backend</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-652824259"></a>
+                                <a href="../namespaces/Backend.html" style="margin-left: 30px; padding-left: 0">Backend</a>
             </div>
-            <div id="namespace-2127601439" class="accordion-body collapse ">
+            <div id="namespace-652824259" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-182268070"></a>
-                                <a href="../namespaces/backend.src.html" style="margin-left: 30px; padding-left: 0">src</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1363907649"></a>
+                                <a href="../namespaces/Backend.Src.html" style="margin-left: 30px; padding-left: 0">Src</a>
             </div>
-            <div id="namespace-182268070" class="accordion-body collapse ">
+            <div id="namespace-1363907649" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-172781847"></a>
-                                <a href="../namespaces/backend.src.Bootstrap.html" style="margin-left: 30px; padding-left: 0">Bootstrap</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-216234248"></a>
+                                <a href="../namespaces/Backend.Src.Bootstrap.html" style="margin-left: 30px; padding-left: 0">Bootstrap</a>
             </div>
-            <div id="namespace-172781847" class="accordion-body collapse ">
+            <div id="namespace-216234248" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-85828616"></a>
-                                <a href="../namespaces/backend.src.Bootstrap.Base.html" style="margin-left: 30px; padding-left: 0">Base</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1962819422"></a>
+                                <a href="../namespaces/Backend.Src.Bootstrap.Base.html" style="margin-left: 30px; padding-left: 0">Base</a>
             </div>
-            <div id="namespace-85828616" class="accordion-body collapse ">
+            <div id="namespace-1962819422" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
                     <ul>
-                                                    <li class="interface"><a href="../classes/backend.src.Bootstrap.Base.AutoloaderNamespaces.html">AutoloaderNamespaces</a></li>
+                                                    <li class="interface"><a href="../classes/Backend.Src.Bootstrap.Base.AutoloaderNamespaces.html">AutoloaderNamespaces</a></li>
                                                                                             </ul>
                 </div>
             </div>
@@ -199,16 +150,16 @@
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-2136928168"></a>
-                                <a href="../namespaces/backend.src.Bootstrap.Classes.html" style="margin-left: 30px; padding-left: 0">Classes</a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1920241720"></a>
+                                <a href="../namespaces/Backend.Src.Bootstrap.Classes.html" style="margin-left: 30px; padding-left: 0">Classes</a>
             </div>
-            <div id="namespace-2136928168" class="accordion-body collapse ">
+            <div id="namespace-1920241720" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
                     <ul>
-                                                                                                    <li class="class"><a href="../classes/backend.src.Bootstrap.Classes.Autoloader.html">Autoloader</a></li>
-                                                    <li class="class"><a href="../classes/backend.src.Bootstrap.Classes.Request.html">Request</a></li>
+                                                                                                    <li class="class"><a href="../classes/Backend.Src.Bootstrap.Classes.Autoloader.html">Autoloader</a></li>
+                                                    <li class="class"><a href="../classes/Backend.Src.Bootstrap.Classes.Request.html">Request</a></li>
                                             </ul>
                 </div>
             </div>
@@ -223,47 +174,13 @@
         </div>
     </div>
 
-                    
-                    <ul>
-                                                                                            </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-                    
-                    <ul>
-                                                                                            </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-783135465"></a>
-                                <a href="../namespaces/Backend.html" style="margin-left: 30px; padding-left: 0">Backend</a>
-            </div>
-            <div id="namespace-783135465" class="accordion-body collapse ">
-                <div class="accordion-inner">
-
-                                                    <div class="accordion" style="margin-bottom: 0">
-        <div class="accordion-group">
-            <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1304968892"></a>
-                                <a href="../namespaces/Backend.Src.html" style="margin-left: 30px; padding-left: 0">Src</a>
-            </div>
-            <div id="namespace-1304968892" class="accordion-body collapse ">
-                <div class="accordion-inner">
-
-                                                    <div class="accordion" style="margin-bottom: 0">
-        <div class="accordion-group">
-            <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1980178838"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1665468386"></a>
                                 <a href="../namespaces/Backend.Src.Tests.html" style="margin-left: 30px; padding-left: 0">Tests</a>
             </div>
-            <div id="namespace-1980178838" class="accordion-body collapse ">
+            <div id="namespace-1665468386" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
@@ -278,10 +195,10 @@
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-460025927"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-789378072"></a>
                                 <a href="../namespaces/Backend.Src.Traits.html" style="margin-left: 30px; padding-left: 0">Traits</a>
             </div>
-            <div id="namespace-460025927" class="accordion-body collapse ">
+            <div id="namespace-789378072" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
@@ -322,82 +239,46 @@
     <section class="row-fluid">
         <div class="span10 offset2">
             <div class="row-fluid">
-                <div class="span8 content class">
+                <div class="span8 content namespace">
                     <nav>
-                                                <a href="../namespaces/backend.src.Bootstrap.Base.html">\backend\src\Bootstrap\Base</a>
+                                                <a href="../namespaces/Backend.Src.html">\Backend\Src</a>
                                             </nav>
-                    <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
+                    <h1><small>\Backend\Src</small>Bootstrap</h1>
 
-                    <h1><small>\backend\src\Bootstrap\Base</small>AutoloaderNamespaces</h1>
-                    <p><em>Interface AutoloaderNamespaces</em></p>
+                                        <h2>Namespaces</h2>
+                    <table class="table table-hover">
+                                                    <tr>
+                                <td><a href="../namespaces/Backend.Src.Bootstrap.Base.html">Base</a></td>
+                            </tr>
+                                                    <tr>
+                                <td><a href="../namespaces/Backend.Src.Bootstrap.Classes.html">Classes</a></td>
+                            </tr>
+                                            </table>
                     
+                    
+                    
+                                    </div>
 
-                    <section id="summary">
-                        <h2>Summary</h2>
-                        <section class="row-fluid heading">
-                            <section class="span6">
-                                <a href="#methods">Methods</a>
-                            </section>
-                            <section class="span6">
-                                <a href="#constants">Constants</a>
-                            </section>
-                        </section>
-                        <section class="row-fluid public">
-                            <section class="span6">
-                                                                    <em>No public methods found</em>
-                                                            </section>
-                            <section class="span6">
-                                                                    <em>No constants found</em>
-                                                            </section>
-                        </section>
-                        <section class="row-fluid protected">
-                            <section class="span6">
-                                                                    <em>No protected methods found</em>
-                                                            </section>
-                            <section class="span6">
-                                <em>N/A</em>
-                            </section>
-                        </section>
-                        <section class="row-fluid private">
-                            <section class="span6">
-                                                                    <em>No private methods found</em>
-                                                            </section>
-                            <section class="span6">
-                                <em>N/A</em>
-                            </section>
-                        </section>
-                    </section>
-                </div>
                 <aside class="span4 detailsbar">
-                                        <dl>
-                        <dt>File</dt>
-                            <dd>
-                                <a href="../files/Bootstrap.Base.IAutoloader.html"><div class="path-wrapper">Bootstrap/Base/IAutoloader.php</div></a>
-                            </dd>
-                                                <dt>Package</dt>
-                            <dd><div class="namespace-wrapper">\backend\src\Bootstrap\Base</div></dd>
-                                                
-                                            </dl>
-                    <h2>Tags</h2>
-                    <table class="table table-condensed">
-                                            <tr><td colspan="2"><em>None found</em></td></tr>
-                                        </table>
+                    <dl>
+                        <dt>Namespace hierarchy</dt>
+                        <dd class="hierarchy">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                    <div class="namespace-wrapper"><a href="../namespaces/default.html">\</a></div>
+                                                            
+                                    <div class="namespace-wrapper"><a href="../namespaces/Backend.html">\Backend</a></div>
+                                                            
+                                    <div class="namespace-wrapper"><a href="../namespaces/Backend.Src.html">\Backend\Src</a></div>
+                                                                                        <div class="namespace-wrapper">\Backend\Src\Bootstrap</div>
+                        </dd>
+                    </dl>
                 </aside>
             </div>
 
             
-                    </div>
+            
+        </div>
     </section>
-
-    <div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h3 id="source-view-label">IAutoloader.php</h3>
-        </div>
-        <div class="modal-body">
-            <pre data-src="../files/Bootstrap/Base/IAutoloader.php.txt" class="language-php"></pre>
-        </div>
-    </div>
 
     <footer class="row-fluid">
         <section class="span10 offset2">
@@ -408,7 +289,6 @@
                                                         <h1><i class="icon-code"></i></h1>
                             <div>
                                 <ul>
-                                                                            <li><a href="../namespaces/backend.html">\backend</a></li>
                                                                             <li><a href="../namespaces/Backend.html">\Backend</a></li>
                                                                     </ul>
                             </div>
@@ -437,7 +317,7 @@
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on January 31st, 2016 at 20:23.
+                    on January 31st, 2016 at 20:46.
                 </section>
             </section>
         </section>
